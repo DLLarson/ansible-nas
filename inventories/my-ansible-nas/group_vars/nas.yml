@@ -24,16 +24,6 @@ zfs_root: "/tank"
 
 # User accounts
 
-- name: Create user dlarson
-  user:
-    name: dlarson
-    state: present
-    update_password: on_create
-    create_home: no
-    password: "$6$.gijCVAXbENBqQ$iDfsr2vMB8o2G.e.as18Q1jsLhix7DOs.7MUQkmWHU2zF0yhqMGwd1rT.X7e3knGq4/5KIfsV21Pe02nd4yJv0"
-    group: dlarson
-    shell: /usr/sbin/nologin
-
 #- name: Create user dlarson
 #  user:
 #    name: dlarson
@@ -118,9 +108,7 @@ videos_root: "{{ zfs_root }}/larsonmedia/videos"
 
 samba_users:
   - name: dlarson
-    password: foobar
-#  - name: dlarson
-#    password: "{{ dlarson_passwd }}"
+    password: "{{ dlarson_passwd }}"
 #  - name: larzmedia
 #    password: "{{ larzmedia_passwd }}"
 #  - name: larzmediaro
