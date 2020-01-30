@@ -21,6 +21,7 @@ transmission_enabled: false
 nzbget_enabled: false
 pyload_enabled: false
 utorrent_enabled: false
+sabnzbd_enabled: false
 
 # Media Serving
 plex_enabled: false
@@ -906,3 +907,13 @@ vd_users:
     password: "topsecret"
     sudo: "Y"
 vd_rdp_port: 3389
+
+###
+### Sabnzbd defaults
+###
+sabnzbd_available_externally: "false"
+sabnzbd_data_directory: "{{ docker_home }}/sabnzbd"
+sabnzbd_user_id: "0"
+sabnzbd_group_id: "0"
+sabnzbd_http_port: "18080"
+sabnzbd_https_port: "19090"
