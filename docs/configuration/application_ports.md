@@ -46,6 +46,8 @@ By default, applications can be found on the ports listed below.
 | Portainer       | 9000   |           |
 | pyload          | 8000   |           |
 | Radarr          | 7878   |           |
+| Sabnzbd         | 18080  | HTTP      |
+| Sabnzbd         | 19090  | HTTPS     |
 | Serposcope      | 7134   |           |
 | Sickchill       | 8081   |           |
 | Sonarr          | 8989   |           |
